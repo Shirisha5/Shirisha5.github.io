@@ -1,0 +1,21 @@
+.footerWrapper {
+  padding: 2rem 6rem;
+  color: #ffffff;
+  .hrLine {
+    border: 1px solid #ff7200;
+  }
+  .footerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+  }
+  .socialLinks {
+    display: flex;
+    gap: 2rem;
+    img {
+      width: 40px;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+.workSection {
+}
+
+.workWrapper {
+  padding: 2rem 6rem;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  .workTitle {
+    font-family: "Llewie";
+    color: #ff7200;
+    box-shadow: inset 0 0 4px 1px #ff7200;
+    padding: 0.8rem 2rem;
+    border-radius: 12px;
+    display: flex;
+    align-self: center;
+  }
+  .gridContainerWrapper {
+    margin-top: 3.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    grid-auto-flow: dense;
+  }
+  .gridCard {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: rgba(136, 136, 136, 0.05);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #ffffff;
+    padding: 2rem;
+    border-top: 1px solid #ff7200;
+    max-width: 280px;
+    height: 280px;
+
+    .mainTitle {
+      display: inline-block;
+      font-weight: 600;
+      line-height: 1.1;
+      font-size: 22px;
+      margin-bottom: 1rem;
+      text-decoration: none;
+      color: #ffffff;
+      &:hover {
+        text-decoration: underline;
+        color: #ff7200;
+        cursor: pointer;
+      }
+    }
+    .description {
+      font-size: 15px;
+      opacity: 0.8;
+      margin-bottom: 1rem;
+    }
+    .learnedSkills {
+      font-size: 14px;
+      color: #ff7200;
+    }
+  }
+}
