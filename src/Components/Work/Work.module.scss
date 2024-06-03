@@ -1,6 +1,3 @@
-.workSection {
-}
-
 .workWrapper {
   padding: 2rem 6rem;
   display: flex;
@@ -61,5 +58,11 @@
       font-size: 14px;
       color: #ff7200;
     }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .workWrapper {
+    padding: 2rem 1.5rem;
   }
 }

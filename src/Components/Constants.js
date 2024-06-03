@@ -35,11 +35,11 @@ export const skillDetails = [
 ]
 
 export const experienceDetails = [{
-    id: 1, time: 'May 2022 - present', companyName: 'Front End Engineer @ Codecraft technologies', description: `style, develop and maintain websites such as cox edge, cox edge
-portal and igoalzero`, skills: ['React JS', 'Html', 'Css', 'Javascript']
+    id: 1, time: 'May 2022 - present', companyName: 'Front End Engineer @ Codecraft technologies', description: `Style, develop and maintain websites such as cox edge, cox edge
+portal and igoalzero`, skills: ['React JS', 'Html', 'Css', 'Javascript', 'Graphql', 'TypeScript', 'Node Js', 'MongoDB', 'Nest Js']
 }, {
     id: 2, time: 'July 2020 - April 2022', companyName: 'Trainee Engineer @ Prematix Software Solutions', description: `Build, style and develop websites such as health care
-application, bar management pos, retail websites`, skills: ['React JS', 'Html', 'Css', 'Javascript']
+application, bar management pos, retail websites`, skills: ['React JS', 'Html', 'Css', 'Javascript', 'Figma']
 }]
 
 export const workDetails = [{
@@ -54,7 +54,7 @@ export const workDetails = [{
 }, {
     id: 4, projectName: 'Cinemad - A Movie Recommendation Website', description: 'A Movie Website which displays all recent movies with rating cast and crew and few more details', skills: 'Html, Js, Css'
 }, {
-    id: 5, projectName: 'Personal Portfolio', description: 'A Personal porfolio describes details about me, my experinece and projects that I have worked on', skills: 'React JS'
+    id: 5, projectName: 'Personal Portfolio', description: 'A Personal porfolio describes details about me, my experinece and projects that I have worked on', skills: 'React JS', link: 'https://github.com/Shirisha5/Shirisha5.github.io'
 }, {
     id: 6, projectName: 'Planets Website', description: 'A Simple 3d planets website with description', skills: 'ThreeJs, Html, Js, Css', link: 'https://github.com/Shirisha5/planets_threejs'
 }]

@@ -88,3 +88,27 @@
     }
   }
 }
+
+@media only screen and (max-width: 900px) {
+  .aboutMeWrapper {
+    .aboutMeSubWrapper {
+      padding: 2rem 1.5rem;
+      flex-direction: column;
+      .aboutMeImg {
+        width: 100%;
+      }
+      .aboutMeContent {
+        width: 100%;
+
+        .skillsWrapper {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 1rem;
+          .skillCard {
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+}

@@ -9,7 +9,10 @@ export default function Footer() {
     <div className={styles.footerWrapper}>
       <hr className={styles.hrLine} />
       <div className={styles.footerContent}>
-        <div> © Copyright 2024, Shirisha. All Rights Reserved.</div>
+        <div className={styles.title}>
+          {" "}
+          © Copyright 2024, Shirisha. All Rights Reserved.
+        </div>
         <div className={styles.socialLinks}>
           <a href="https://github.com/Shirisha5" target="_blank">
             <img src={github} />

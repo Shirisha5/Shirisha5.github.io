@@ -58,6 +58,8 @@
   ul {
     position: relative;
     z-index: 100;
+    list-style-type: none;
+    padding: 0;
   }
   ul li {
     list-style: none;
@@ -73,6 +75,23 @@
     transition: 0.5s;
     &:hover {
       color: #ff7200;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .headerMainClass {
+    width: 100vw;
+    .wrapper {
+      padding: 0.5rem 1.5rem;
+    }
+  }
+  .navbarContainer {
+    .closeIcon {
+      padding: 2rem 1.5rem;
+    }
+    ul li a {
+      font-size: 2.5em;
     }
   }
 }

@@ -75,3 +75,19 @@
     text-align: center;
   }
 }
+
+@media only screen and (max-width: 900px) {
+  .home {
+    .sectionOne {
+      padding: 2rem 1.5rem;
+    }
+    .title {
+      text-align: center;
+    }
+    .subTitle {
+      width: auto;
+      font-weight: 600;
+      font-size: 2rem;
+    }
+  }
+}
