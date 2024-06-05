@@ -4,12 +4,17 @@ import menu from "../../Assets/Images/Logo/menu.svg";
 import close from "../../Assets/Images/Logo/closeIcon.svg";
 import styles from "./Header.module.scss";
 
-export default function Header() {
+export default function Header(props) {
+  const { scrollToSection, homeRef, aboutRef, skillsRef, workRef, contactRef } =
+    props;
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const handleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-  console.log(isMenuOpen);
+  const handleClick = (ref) => {
+    handleMenu();
+    scrollToSection(ref);
+  };
   return (
     <>
       <div className={styles.headerMainClass}>
@@ -30,51 +35,11 @@ export default function Header() {
             </div>
             <div className={styles.wrapper}>
               <ul>
-                <li>
-                  <a
-                    target="_blank"
-                    href="https://youtu.be/SpbRY1IRUko"
-                    data-text="Home"
-                  >
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a
-                    target="_blank"
-                    href="https://youtu.be/SpbRY1IRUko"
-                    data-text="Blogs"
-                  >
-                    About Me
-                  </a>
-                </li>
-                <li>
-                  <a
-                    target="_blank"
-                    href="https://youtu.be/SpbRY1IRUko"
-                    data-text="Coding"
-                  >
-                    Experience
-                  </a>
-                </li>
-                <li>
-                  <a
-                    target="_blank"
-                    href="https://youtu.be/SpbRY1IRUko"
-                    data-text="Skills"
-                  >
-                    Projects
-                  </a>
-                </li>
-                <li>
-                  <a
-                    target="_blank"
-                    href="https://youtu.be/SpbRY1IRUko"
-                    data-text="Contact"
-                  >
-                    Contact
-                  </a>
-                </li>
+                <li onClick={() => handleClick(homeRef)}>Home</li>
+                <li onClick={() => handleClick(aboutRef)}>About Me</li>
+                <li onClick={() => handleClick(skillsRef)}>Experience</li>
+                <li onClick={() => handleClick(workRef)}>Projects</li>
+                <li onClick={() => handleClick(contactRef)}>Contact</li>
               </ul>
             </div>
           </div>
