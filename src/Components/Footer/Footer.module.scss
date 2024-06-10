@@ -13,6 +13,12 @@
   .socialLinks {
     display: flex;
     gap: 2rem;
+    a {
+      transition: transform 0.3s;
+    }
+    a:hover {
+      transform: translateY(-10px);
+    }
     img {
       width: 40px;
       cursor: pointer;
