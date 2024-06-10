@@ -7,9 +7,9 @@ import styles from "./Home.module.scss";
 function Home() {
   return (
     <section className={styles.home}>
-      {/* <div className={styles.spaceAnimeLottie}>
+      <div className={styles.spaceAnimeLottie}>
         <Lottie animationData={spaceAnime} loop={false} />
-      </div> */}
+      </div>
       <div className={styles.sectionOne}>
         <div className={styles.mainBgContainer}>
           <div className={styles.mainContent}>
