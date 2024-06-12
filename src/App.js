@@ -51,13 +51,13 @@ function App() {
 
   return (
     <div className="App">
-      <div ref={container}>
+      {/* <div ref={container}>
         {" "}
         <div className="overlay">
           <h1>Shirisha</h1>
           <span>Web Developer</span>
         </div>
-      </div>
+      </div> */}
       <Header scrollToSection={scrollToSection} homeRef={homeRef} aboutRef={aboutRef} skillsRef={skillsRef} workRef={workRef} contactRef={contactRef} />
       <div ref={homeRef}><Home /></div>
       <div ref={aboutRef}><AboutMe /></div>
