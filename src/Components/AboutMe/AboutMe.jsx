@@ -1,5 +1,6 @@
 import React from "react";
 import aboutMe from "../../Assets/Images/aboutMe.svg";
+import arrow from "../../Assets/Images/arrow.png";
 import { skillDetails } from "../Constants";
 import styles from "./AboutMe.module.scss";
 
@@ -33,6 +34,16 @@ export default function AboutMe() {
               <div className={styles.skillCard}>
                 <div className={styles.skillImg}>
                   <img src={detail.image} alt={detail.skill} />
+                </div>
+                <div className={styles.skillTitle}>{detail.skill}</div>
+              </div>
+            ))}
+          </div>
+          <div className={styles.skillsMobileWrapper}>
+            {skillDetails?.map((detail) => (
+              <div className={styles.skillCard}>
+                <div className={styles.skillImg}>
+                  <img src={arrow} alt={detail.skill} />
                 </div>
                 <div className={styles.skillTitle}>{detail.skill}</div>
               </div>

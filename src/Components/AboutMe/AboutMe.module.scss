@@ -24,8 +24,8 @@
     .aboutMeImg {
       width: 50%;
       img {
-        width: 100%;
-        height: 100%;
+        width: 80%;
+        height: 80%;
         object-fit: contain;
       }
     }
@@ -48,6 +48,9 @@
     .skillsMainTitle {
       color: #ff7200 !important;
       font-weight: 600;
+    }
+    .skillsMobileWrapper {
+      display: none;
     }
     .skillsWrapper {
       display: flex;
@@ -96,6 +99,11 @@
       flex-direction: column;
       .aboutMeImg {
         width: 100%;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
       }
       .aboutMeContent {
         width: 100%;
@@ -106,6 +114,28 @@
           gap: 1rem;
           .skillCard {
             width: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .aboutMeWrapper {
+    .aboutMeSubWrapper {
+      .aboutMeContent {
+        .skillsWrapper {
+          display: none;
+        }
+        .skillsMobileWrapper {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 0.5rem;
+          .skillCard {
+            width: auto;
+            display: flex;
+            gap: 0.6em;
           }
         }
       }
