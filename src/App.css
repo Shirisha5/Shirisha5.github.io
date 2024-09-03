@@ -10,31 +10,7 @@ body {
   background-color: #050810;
   box-sizing: border-box;
 }
-.overlay {
-  position: absolute;
-  z-index: 10000000;
-  width: 100%;
-  height: 100vh;
-  background-color: #050810;
-  top: 0%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #ff7200;
-}
 
-.overlay h1 {
-  font-size: 100px;
-  font-weight: 800;
-  letter-spacing: 20px;
-}
-
-.overlay span {
-  font-size: 50px;
-  letter-spacing: 3px;
-  font-weight: 600;
-}
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -52,16 +28,22 @@ body {
   color: #f5f5f5;
 }
 
-@media only screen and (max-width: 600px) {
-  .App {
-    .overlay h1 {
-      font-size: 3rem;
-      text-align: center;
-      letter-spacing: normal;
-    }
-    .overlay span {
-      font-size: 2rem;
-      text-align: center;
-    }
-  }
+.loadingAnimationStyles {
+  position: fixed;
+  z-index: 10000000;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  background-color: #050810;
+  top: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: hidden;
+}
+
+.spaceLoader {
+  width: 300px;
+  height: 300px;
 }

@@ -23,7 +23,7 @@ export default function Header(props) {
             <img src={logo} alt="logo" />
           </div>
           <div onClick={handleMenu} className={styles.menuImage}>
-            <img src={menu} />
+            <img src={menu} alt="menu" />
           </div>
         </div>
       </div>
@@ -31,7 +31,7 @@ export default function Header(props) {
         {isMenuOpen && (
           <div className={styles.navbarContainer}>
             <div onClick={handleMenu} className={styles.closeIcon}>
-              <img src={close} />
+              <img src={close} alt="close" />
             </div>
             <div className={styles.wrapper}>
               <ul>
