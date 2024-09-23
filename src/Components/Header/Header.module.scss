@@ -36,11 +36,12 @@
   height: 100vh;
   position: fixed;
   z-index: 100000;
-  top: 0;
+  top: -100%;
   left: 0;
   background-color: #050810;
   overflow: hidden;
-  transition: 0.5s;
+  transition: 0.25s;
+  will-change: transform;
   .closeIcon {
     display: flex;
     align-items: end;
@@ -72,9 +73,11 @@
     padding: 5px 20px;
     display: inline-flex;
     font-weight: 700;
+    will-change: transform;
     transition: 0.5s;
     text-align: center;
     cursor: pointer;
+
     &:hover {
       color: #ff7200;
     }
