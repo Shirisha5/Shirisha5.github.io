@@ -18,6 +18,7 @@ function App() {
   const skillsRef = useRef(null);
   const workRef = useRef(null);
   const contactRef = useRef(null);
+  let overlay = true;
 
   const scrollToSection = (elementRef) => {
     window.scrollTo({
@@ -34,19 +35,20 @@ function App() {
         top: "-125%",
         duration: 2,
       });
+      overlay = false
     },
     { scope: container }
   );
 
   return (
     <>
-      <div ref={container}>
+      {overlay && <div ref={container}>
         <div className='loadingAnimationStyles'>
           <div className='spaceLoader'>
             <Lottie animationData={spaceAnime} loop={true} />
           </div>
         </div>
-      </div>
+      </div>}
       <div className="portfolioApp">
         <div>
           <Header scrollToSection={scrollToSection} homeRef={homeRef} aboutRef={aboutRef} skillsRef={skillsRef} workRef={workRef} contactRef={contactRef} />

@@ -30,7 +30,7 @@ body {
 }
 
 .loadingAnimationStyles {
-  position: absolute;
+  position: fixed;
   z-index: 10000000;
   width: 100%;
   height: 100vh;
