@@ -47,13 +47,13 @@ function App() {
 
   return (
     <>
-      {overlay && <div ref={container}>
+      {/* {overlay && <div ref={container}>
         <div className='loadingAnimationStyles'>
           <div className='spaceLoader'>
             <Lottie animationData={spaceAnime} loop={true} />
           </div>
         </div>
-      </div>}
+      </div>} */}
       <div className="portfolioApp">
         <div>
           <Header scrollToSection={scrollToSection} homeRef={homeRef} aboutRef={aboutRef} skillsRef={skillsRef} workRef={workRef} contactRef={contactRef} />
