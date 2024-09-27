@@ -26,7 +26,7 @@ export default function Header(props) {
           top: "0%",
         });
       } else {
-        gsap.to(overlayRef.current, { top: "-100%" });
+        gsap.to(overlayRef.current, { top: "-125%" });
       }
     },
     { dependencies: [isMenuOpen], scope: overlayRef }
