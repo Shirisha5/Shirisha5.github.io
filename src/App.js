@@ -31,7 +31,7 @@ function App() {
     () => {
       gsap.to(".loadingAnimationStyles", {
         delay: 1.5,
-        y: "-200%",
+        top: "-125%",
         duration: 2,
       });
     },

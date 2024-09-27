@@ -19,18 +19,18 @@ export default function Header(props) {
     scrollToSection(ref);
   };
 
-  useGSAP(
-    () => {
-      if (isMenuOpen) {
-        gsap.to(overlayRef.current, {
-          top: "0%",
-        });
-      } else {
-        gsap.to(overlayRef.current, { top: "-100%" });
-      }
-    },
-    { dependencies: [isMenuOpen], scope: overlayRef }
-  );
+  // useGSAP(
+  //   () => {
+  //     if (isMenuOpen) {
+  //       gsap.to(overlayRef.current, {
+  //         top: "0%",
+  //       });
+  //     } else {
+  //       gsap.to(overlayRef.current, { top: "-100%" });
+  //     }
+  //   },
+  //   { dependencies: [isMenuOpen], scope: overlayRef }
+  // );
 
   return (
     <>
