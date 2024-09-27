@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import Home from './Components/Home/Home';
@@ -18,7 +18,6 @@ function App() {
   const skillsRef = useRef(null);
   const workRef = useRef(null);
   const contactRef = useRef(null);
-  const [overlay, setOverlay] = useState(true)
 
   const scrollToSection = (elementRef) => {
     window.scrollTo({
@@ -39,21 +38,15 @@ function App() {
     { scope: container }
   );
 
-  useEffect(() => {
-    setTimeout(() => {
-      setOverlay(false)
-    }, 2500)
-  }, [])
-
   return (
     <>
-      {/* {overlay && <div ref={container}>
+      <div ref={container}>
         <div className='loadingAnimationStyles'>
           <div className='spaceLoader'>
             <Lottie animationData={spaceAnime} loop={true} />
           </div>
         </div>
-      </div>} */}
+      </div>
       <div className="portfolioApp">
         <div>
           <Header scrollToSection={scrollToSection} homeRef={homeRef} aboutRef={aboutRef} skillsRef={skillsRef} workRef={workRef} contactRef={contactRef} />
