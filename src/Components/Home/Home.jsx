@@ -21,7 +21,7 @@ function Home() {
               tabindex="0"
               aria-label="Hey Everyone, I am Shirisha"
             >
-              Hey Everyone, I am Shirisha
+              Hey Everyone, I am Shirisha!
             </div>
             <div
               class={styles.subTitle}

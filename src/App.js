@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import Home from './Components/Home/Home';
@@ -18,7 +18,7 @@ function App() {
   const skillsRef = useRef(null);
   const workRef = useRef(null);
   const contactRef = useRef(null);
-  let overlay = true;
+  const [overlay, setOverlay] = useState(true)
 
   const scrollToSection = (elementRef) => {
     window.scrollTo({
@@ -35,10 +35,15 @@ function App() {
         top: "-125%",
         duration: 2,
       });
-      overlay = false
     },
     { scope: container }
   );
+
+  useEffect(() => {
+    setTimeout(() => {
+      setOverlay(false)
+    }, 2500)
+  }, [])
 
   return (
     <>
