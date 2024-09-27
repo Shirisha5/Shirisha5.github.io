@@ -40,7 +40,7 @@ function Home() {
               class={styles.superTitle}
             >
               Over 3+ years of experience working with programming tools to
-              deliver quality results.
+              deliver quality results to clients.
             </div>
           </div>
         </div>
