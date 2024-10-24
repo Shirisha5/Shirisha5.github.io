@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.86a40ef5.css",
-    "main.js": "/static/js/main.5545e9da.js",
+    "main.css": "/static/css/main.b8b86ac4.css",
+    "main.js": "/static/js/main.11dae60c.js",
     "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
-    "static/media/Dashboard.png": "/static/media/Dashboard.2bdcd7ceb3b85a1ef249.png",
     "static/media/coding.png": "/static/media/coding.d257e8c474a7ba61b689.png",
     "static/media/Llewie.ttf": "/static/media/Llewie.2557098bce3658749480.ttf",
     "static/media/aboutMe.svg": "/static/media/aboutMe.48511b6561093bc5f82632b863b5dba8.svg",
@@ -33,12 +32,12 @@
     "static/media/responsive.svg": "/static/media/responsive.b43b7b639930684007cbf37a2929bf09.svg",
     "static/media/css-solid.svg": "/static/media/css-solid.0b4e1f5d2889ddab8ab09bcf38a3e163.svg",
     "static/media/html-solid.svg": "/static/media/html-solid.9d4e9bb379f5386c8fbf85a231632438.svg",
-    "main.86a40ef5.css.map": "/static/css/main.86a40ef5.css.map",
-    "main.5545e9da.js.map": "/static/js/main.5545e9da.js.map",
+    "main.b8b86ac4.css.map": "/static/css/main.b8b86ac4.css.map",
+    "main.11dae60c.js.map": "/static/js/main.11dae60c.js.map",
     "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.86a40ef5.css",
-    "static/js/main.5545e9da.js"
+    "static/css/main.b8b86ac4.css",
+    "static/js/main.11dae60c.js"
   ]
 }
