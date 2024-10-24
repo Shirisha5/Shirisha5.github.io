@@ -1,7 +1,6 @@
 import React from "react";
-import dashboard from "../../Assets/Images/projects/Dashboard.png";
-import styles from "./Work.module.scss";
 import { workDetails } from "../Constants";
+import styles from "./Work.module.scss";
 
 export default function Work() {
   return (
@@ -20,6 +19,13 @@ export default function Work() {
                   {work.projectName}
                 </a>
                 <div className={styles.description}>{work.description}</div>
+                {work.id !== 5 && (
+                  <div className={styles.viewMore} title="behance link">
+                    <a href={work.be_link} target="_blank">
+                      View
+                    </a>
+                  </div>
+                )}
               </div>
               <div className={styles.learnedSkills}>{work.skills}</div>
             </div>

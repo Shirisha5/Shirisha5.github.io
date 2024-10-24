@@ -46,15 +46,20 @@ export const workDetails = [{
     id: 1, projectName: 'Twitch - Social Media Website', description: `Twitch is something I personally created to learn API's and web
     sockets connection.It is basically a social media app where you
     can connect to friends and chat.`, skills: 'React JS, Web sockets, Node Js, Express JS, MongoDB',
-    link: 'https://github.com/Shirisha5/social_media_app'
+    link: 'https://github.com/Shirisha5/social_media_app',
+    be_link: 'https://www.behance.net/gallery/200416173/Social-Media-Web-Application'
 }, {
-    id: 2, projectName: 'Simple Music Player', description: 'A simple music player App using React', skills: 'React Js', link: 'https://github.com/Shirisha5/react_music_player'
+    id: 2, projectName: 'Simple Music Player', description: 'A simple music player App using React', skills: 'React Js', link: 'https://github.com/Shirisha5/react_music_player',
+    be_link: 'https://www.behance.net/gallery/200426377/Music-player'
 }, {
-    id: 3, projectName: 'Simple Page Transition', description: 'A page transition website using grid styles', skills: 'Html, Js, Css', link: 'https://github.com/Shirisha5/simple_image_transition'
+    id: 3, projectName: 'Simple Page Transition', description: 'A page transition website using grid styles', skills: 'Html, Js, Css', link: 'https://github.com/Shirisha5/simple_image_transition',
+    be_link: 'https://www.behance.net/gallery/200611919/Grid-Transition'
 }, {
-    id: 4, projectName: 'Cinemad - A Movie Recommendation Website', description: 'A Movie Website which displays all recent movies with rating cast and crew and few more details', skills: 'Html, Js, Css'
+    id: 4, projectName: 'Cinemad - A Movie Recommendation Website', description: 'A Movie Website which displays all recent movies with rating cast and crew and few more details', skills: 'Html, Js, Css',
+    be_link: 'https://www.behance.net/gallery/200147727/Movie-Recommendation-Website'
 }, {
     id: 5, projectName: 'Personal Portfolio', description: 'A Personal porfolio describes details about me, my experinece and projects that I have worked on', skills: 'React JS', link: 'https://github.com/Shirisha5/Shirisha5.github.io'
 }, {
-    id: 6, projectName: 'Planets Website', description: 'A Simple 3d planets website with description', skills: 'ThreeJs, Html, Js, Css', link: 'https://github.com/Shirisha5/planets_threejs'
+    id: 6, projectName: 'Planets Website', description: 'A Simple 3d planets website with description', skills: 'ThreeJs, Html, Js, Css', link: 'https://github.com/Shirisha5/planets_threejs',
+    be_link: 'https://www.behance.net/gallery/200609129/Planets-3d-website'
 }]

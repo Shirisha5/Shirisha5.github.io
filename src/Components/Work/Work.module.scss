@@ -54,6 +54,16 @@
       opacity: 0.8;
       margin-bottom: 1rem;
     }
+    .viewMore {
+      font-size: 12px;
+      text-decoration: underline;
+      a {
+        color: #ffffff;
+        &:hover {
+          color: #ff7200;
+        }
+      }
+    }
     .learnedSkills {
       font-size: 14px;
       color: #ff7200;
